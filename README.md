@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-go install github.com/nuetoban/go-pomodoro@latest
+go install github.com/nuetoban/go-pomodoro/cmd/pom@latest
 ```
 
 ## Usage
