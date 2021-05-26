@@ -6,16 +6,14 @@ import (
 )
 
 type BarTemplate struct {
-	time   time.Time
-	name   string
-	finish string
-	emoji  string
+	time  time.Time
+	name  string
+	emoji string
 }
 
 func NewBarTemplate() *BarTemplate {
 	t := &BarTemplate{}
 	t.time = time.Now()
-	t.finish = ` {{ bar . "[" "-" (cycle . "🕛" "🕐" "🕑" "🕒" "🕓" "🕔" "🕕" "🕖" "🕗" "🕘" "🕙" "🕚" ) "." "]"}} {{etime .}} {{percent .}}`
 	return t
 }
 
